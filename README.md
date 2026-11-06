@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/batman-hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/batman-hero-light.svg">
-  <img src="assets/batman-hero-dark.svg" width="1440" alt="MD. MINE UDDIN / ENGINEERING. Question assumptions. Uncover weaknesses. Engineer solutions. SECURITY RESEARCH · APPLIED ML · SOFTWARE ENGINEERING. github.com/Mr-Shantoo.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-minimal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-hero-minimal-light.svg">
+  <img src="assets/profile-hero-minimal-dark.svg" width="1440" alt="MD. MINE UDDIN / ENGINEERING. Question assumptions. Uncover weaknesses. Engineer solutions. SECURITY RESEARCH · APPLIED ML · SOFTWARE ENGINEERING. github.com/Mr-Shantoo.">
 </picture>
 
 ## About Me
