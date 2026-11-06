@@ -21,10 +21,10 @@
 
 ## Hero maintenance
 
-- The two static SVGs use a 1440 × 650 viewBox, local gradients and a system font stack. No external font, raster image, widget, script or animation is required.
+- The two static SVGs use a 1440 × 600 viewBox, flat colors and a system font stack. No external font, raster image, widget, script or animation is required.
 - The headline uses Arial, Helvetica, sans-serif; technical labels use a monospace fallback stack. Text remains editable and is not stretched.
-- The connected angular silhouette, its central body, circular light and tapered beam are original vector artwork. No official emblem or movie artwork is used.
-- The README selects light and dark artwork through `picture` sources. Within each SVG, the mobile layout enlarges text, reduces the searchlight and wraps the specialization.
+- The bat is a single connected vector silhouette with no panel details, ring, halo or beam. No movie artwork is embedded.
+- The README selects light and dark artwork through `picture` sources. Within each SVG, the mobile layout enlarges text, places the small bat at the upper right and wraps the specialization.
 - Only the textual reference description was available for V3; no reference screenshot file was attached.
 - Browser tools, XML tools and generated previews remain in the operating system's temporary directory. The repository has no build step or rendering dependencies.
 - Review the final local diff before publishing. No commit or push is part of the V3 implementation request.

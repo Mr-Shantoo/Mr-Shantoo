@@ -1,75 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" width="100%" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600" width="100%" role="img" aria-labelledby="title description">
   <title id="title">MD. MINE UDDIN / ENGINEERING</title>
-  <desc id="description">I investigate what breaks. I build what lasts. SECURITY RESEARCH · APPLIED ML · SOFTWARE ENGINEERING. github.com/Mr-Shantoo. A wide, low-profile metallic bat insignia with subtle panel seams and a soft crimson shadow.</desc>
-  <defs>
-    <linearGradient id="ground" x2="1" y2=".6">
-      <stop stop-color="#090A0D"/>
-      <stop offset="1" stop-color="#111217"/>
-    </linearGradient>
-    <radialGradient id="haze" cx=".83" cy=".4" r=".48">
-      <stop stop-color="#901C2C" stop-opacity=".14"/>
-      <stop offset="1" stop-color="#901C2C" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
-      <path d="M64 0H0V64" fill="none" stroke="#24262D" stroke-width="1"/>
-    </pattern>
-    <radialGradient id="signalRed">
-      <stop stop-color="#951C30" stop-opacity=".32"/>
-      <stop offset="1" stop-color="#951C30" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+  <desc id="description">Question assumptions. Uncover weaknesses. Engineer solutions. SECURITY RESEARCH · APPLIED ML · SOFTWARE ENGINEERING. github.com/Mr-Shantoo.</desc>
   <style>
     .label, .footer { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .headline { font-family: Arial, Helvetica, sans-serif; font-size: 108px; font-weight: 800; letter-spacing: -4.5px; }
-    .last-line { font-size: 96px; }
+    .headline { font-family: Arial, Helvetica, sans-serif; font-size: 82px; font-weight: 700; letter-spacing: -2.8px; }
+    .signal { transform: translate(1016px, 188px) scale(2.1); }
     .compact { display: none; }
     @media (max-width: 600px) {
-      .headline { font-size: 128px; }
-      .last-line { font-size: 112px; }
+      .headline { font-size: 100px; letter-spacing: -3px; }
       .label { font-size: 42px; letter-spacing: .5px; }
-      .signal { transform: translate(480px, 0) scale(.6); }
+      .signal { transform: translate(1100px, -8px) scale(1.5); }
       .wide { display: none; }
       .compact { display: inline; }
-      .footer-focus { font-size: 40px; letter-spacing: 0; }
-      .footer-profile { font-size: 34px; }
-      .bottom-rule { transform: translateY(-24px); }
+      .footer-focus { font-size: 34px; letter-spacing: 0; }
+      .footer-profile { font-size: 30px; }
     }
   </style>
-  <rect width="1440" height="650" rx="5" fill="url(#ground)"/>
-  <rect width="1440" height="650" rx="5" fill="url(#haze)"/>
-  <rect width="1440" height="650" rx="5" fill="url(#grid)" opacity=".22"/>
-  <g class="signal">
-    <g transform="translate(924 79) scale(2.7)">
-  <circle cx="80" cy="80" r="72" fill="url(#signalRed)"/>
-  <g class="insignia" stroke-linejoin="miter">
-    <path d="M12 88L18 76L29 65L42 56L51 53L52 61L61 68L75 73L80 77L85 73L99 68L108 61L109 53L118 56L131 65L142 76L148 88L137 84L127 84L119 86L115 91L107 88L98 87L87 96L83 98L80 95L77 98L73 96L62 87L53 88L45 91L41 86L33 84L23 84Z" fill="#111318" stroke="#353941" stroke-width=".6"/>
-    <path d="M16 85L23 75L36 65L49 59L46 86L39 82L26 81Z M144 85L137 75L124 65L111 59L114 86L121 82L134 81Z" fill="#16191E"/>
-    <path d="M53 64L62 70L76 76L77 94L64 84L50 86Z M107 64L98 70L84 76L83 94L96 84L110 86Z" fill="#24282F"/>
-    <path d="M49 59L46 86M52 63L74 77M111 59L114 86M108 63L86 77" fill="none" stroke="#575B64" stroke-width=".6" stroke-opacity=".48"/>
-    <path d="M57 75L71 82M103 75L89 82" fill="none" stroke="#111318" stroke-width="1.6"/>
-    <path d="M80 78V94" stroke="#090A0D" stroke-width=".75"/>
-    <g fill="#111318" stroke="#575B64" stroke-width=".45" stroke-opacity=".6">
-      <circle cx="55" cy="71" r="1.3"/>
-      <circle cx="105" cy="71" r="1.3"/>
-    </g>
-    <path d="M18 76L29 65L42 56L51 53M109 53L118 56L131 65L142 76" fill="none" stroke="#8D3544" stroke-width=".6" stroke-opacity=".7"/>
+  <rect width="1440" height="600" rx="4" fill="#0B0C0F"/>
+  <text class="label" x="80" y="82" fill="#959AA5" font-size="18" letter-spacing="1.4">MD. MINE UDDIN / ENGINEERING</text>
+  <g class="headline" fill="#ECEEF2">
+    <text x="76" y="210">Question assumptions.</text>
+    <text x="76" y="310" fill="#B5495C">Uncover weaknesses.</text>
+    <text x="76" y="410">Engineer solutions.</text>
   </g>
-    </g>
+  <g class="signal" fill="#626873">
+    <path class="insignia" d="M10 55L24 39L48 26L54 24L54 33L70 39L75 36L78 39H82L85 36L90 39L106 33V24L112 26L136 39L150 55L128 49L118 51L113 57L99 52L90 57L80 65L70 57L61 52L47 57L42 51L32 49Z"/>
   </g>
-  <path d="M76 42H122" stroke="#BE3445" stroke-width="3"/>
-  <text class="label" x="76" y="84" fill="#A4A5AB" font-size="18" letter-spacing="1.7">MD. MINE UDDIN / ENGINEERING</text>
-  <g class="headline" fill="#F1F1F3">
-    <text x="70" y="215">I investigate</text>
-    <text x="70" y="337" fill="#BE3445">what breaks.</text>
-    <text class="last-line" x="70" y="459">I build what lasts.</text>
-  </g>
-  <path class="bottom-rule" d="M76 554.5H1364" stroke="#24262D"/>
-  <g class="footer" fill="#A4A5AB" font-size="18" letter-spacing=".35">
-    <text class="wide" x="76" y="602">SECURITY RESEARCH · APPLIED ML · SOFTWARE ENGINEERING</text>
+  <path d="M80 500.5H1360" stroke="#24272E"/>
+  <g class="footer" fill="#959AA5" font-size="18">
+    <text class="wide" x="80" y="550">SECURITY RESEARCH · APPLIED ML · SOFTWARE ENGINEERING</text>
     <g class="compact footer-focus">
-      <text x="76" y="584">SECURITY RESEARCH · APPLIED ML</text>
-      <text x="76" y="624">SOFTWARE ENGINEERING</text>
+      <text x="80" y="540">SECURITY RESEARCH · APPLIED ML</text>
+      <text x="80" y="576">SOFTWARE ENGINEERING</text>
     </g>
-    <text class="footer-profile" x="1364" y="602" text-anchor="end" font-size="20" letter-spacing="0">github.com/Mr-Shantoo</text>
+    <text class="footer-profile" x="1360" y="550" text-anchor="end" font-size="20">github.com/Mr-Shantoo</text>
   </g>
 </svg>
