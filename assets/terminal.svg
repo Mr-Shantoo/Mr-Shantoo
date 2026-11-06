@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="100%" role="img" aria-labelledby="title desc">
+  <title id="title">Profile terminal transcript</title>
+  <desc id="desc">&gt; whoami
+  Md. Mine Uddin (Shanto), final-year CSE, UIU. Graduating Feb 2027. Dhaka, Bangladesh.
+&gt; focus
+  detection systems: IoT/TinyML, machine learning, software supply-chain security
+&gt; status
+  Final Year Project in progress. Open to AI/ML internships and research collaboration.</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 16px; fill: #d7dde3; }
+    .command { fill: #8a949e; }
+    .line { animation: reveal .6s ease-out both; }
+    .l1 { animation-delay: .2s; } .l2 { animation-delay: .9s; }
+    .l3 { animation-delay: 1.6s; } .l4 { animation-delay: 2.3s; }
+    .l5 { animation-delay: 3s; } .l6 { animation-delay: 3.7s; }
+    .cursor { animation: blink 2.8s ease-in-out 4.3s infinite; }
+    .compact { display: none; }
+    @media (max-width: 600px) {
+      .wide { display: none; }
+      .compact { display: inline; }
+      .compact text { font-size: 28px; }
+      .cursor { x: 900px; y: 234px; }
+    }
+    @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes blink { 0%, 100% { opacity: .25; } 50% { opacity: .85; } }
+    @media (prefers-reduced-motion: reduce) { .line, .cursor { animation: none; opacity: 1; } }
+  </style>
+  <rect x=".5" y=".5" width="959" height="259" rx="6" fill="#12161b" stroke="#2a323b"/>
+  <path d="M1 35.5H959" stroke="#2a323b"/>
+  <g fill="#8a949e" opacity=".45"><circle cx="23" cy="18" r="3"/><circle cx="38" cy="18" r="3"/><circle cx="53" cy="18" r="3"/></g>
+  <g class="wide">
+  <text class="line l1 command" x="24" y="65">&gt; whoami</text>
+  <text class="line l2" x="43" y="91">Md. Mine Uddin (Shanto), final-year CSE, UIU. Graduating Feb 2027. Dhaka, Bangladesh.</text>
+  <text class="line l3 command" x="24" y="123">&gt; focus</text>
+  <text class="line l4" x="43" y="149">detection systems: IoT/TinyML, machine learning, software supply-chain security</text>
+  <text class="line l5 command" x="24" y="181">&gt; status</text>
+  <text class="line l6" x="43" y="207">Final Year Project in progress. Open to AI/ML internships and research collaboration.</text>
+  </g>
+  <g class="compact">
+    <text class="line l1 command" x="24" y="60">&gt; whoami</text>
+    <text class="line l2" x="43" y="84">Md. Mine Uddin (Shanto), final-year CSE, UIU.</text>
+    <text class="line l2" x="43" y="108">Graduating Feb 2027. Dhaka, Bangladesh.</text>
+    <text class="line l3 command" x="24" y="132">&gt; focus</text>
+    <text class="line l4" x="43" y="156">detection systems: IoT/TinyML, machine learning,</text>
+    <text class="line l4" x="43" y="180">software supply-chain security</text>
+    <text class="line l5 command" x="24" y="204">&gt; status</text>
+    <text class="line l6" x="43" y="228">Final Year Project in progress. Open to AI/ML</text>
+    <text class="line l6" x="43" y="252">internships and research collaboration.</text>
+  </g>
+  <rect class="cursor" x="24" y="229" width="9" height="16" fill="#8a949e"/>
+</svg>
