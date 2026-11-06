@@ -1,142 +1,79 @@
-<p align="center">
-  <img src="assets/banner.svg" width="1280" alt="MD. MINE UDDIN / MR-SHANTOO. CASE FILES. DETECTION SYSTEMS / IoT · ML · SECURITY.">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/gotham-banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/gotham-banner-light.svg">
+  <img src="assets/gotham-banner-dark.svg" width="1280" alt="MD. MINE UDDIN. Security Research · Applied ML · Software Engineering. Investigating failures. Engineering reliable systems.">
+</picture>
 
-<p align="center">
-  <img src="assets/terminal.svg" width="960" alt="&gt; whoami&#10;  Md. Mine Uddin (Shanto), final-year CSE, UIU. Graduating Feb 2027. Dhaka, Bangladesh.&#10;&gt; focus&#10;  detection systems: IoT/TinyML, machine learning, software supply-chain security&#10;&gt; status&#10;  Final Year Project in progress. Open to AI/ML internships and research collaboration.">
-</p>
+I’m a final-year Computer Science and Engineering student at **United International University**, Dhaka, Bangladesh, graduating in **February 2027**. I investigate failures in APIs, software supply chains and edge systems, and build practical applications around what people need. My focus is cybersecurity, applied machine learning and dependable software.
 
-Final-year CSE at UIU, graduating February 2027. I build systems that detect what's going wrong before it spreads: contaminated water, malicious packages. Currently working on IoT water-quality monitoring for the Padma River and leakage-controlled malicious-package detection for npm and PyPI.
+## Active investigations
 
-![Section divider](assets/divider.svg)
+### Layer by Layer: An Empirical Ablation of Replay Defenses in a Signed Banking API
 
-## CASE FILES
+*Co-Lead Researcher · API security · Submitted to the 5th ECCE (CUET) · Under review*
 
-Source for most of these is private while papers are unpublished.<br>
-Each file states what is public and what is not.
+Evaluated four replay defenses across 16 configurations and 11 attack scenarios in a reproducible Node.js/Express banking API testbed. Identified a delayed-replay weakness in success-only idempotency tracking, using SQLite as ledger ground truth and a Redis-compatible nonce store.
 
-### CASE 001: THE PADMA RIVER
+### PackagePolice: Leakage-Controlled Malicious Package Detection for npm and PyPI
 
-```text
-Threat:   Water contamination that nobody sees until it is
-          downstream.
-Evidence: Synthetic sensor dataset built with four SDV models
-          compared (CTGAN, TVAE, CopulaGAN, GaussianCopula);
-          CTGAN selected. Seeded from 25 real field
-          measurements. Alert thresholds from the Bangladesh
-          DoE ECR 2023.
-Response: Decision-tree anomaly detector exported to C
-          (emlearn) for ESP32 nodes, plus RCAS: a rule-based
-          carbon-aware scheduler that defers non-critical
-          transmissions to lower-carbon periods while
-          preserving urgent alerts, battery limits and
-          delivery deadlines.
-Limits:   Evaluated on synthetic data and simulation (matched
-          CI-aware vs CI-blind baselines, falsification tests,
-          offline MILP benchmark). Field validation pending.
-Role:     Technical Lead, 5-person team.
-Status:   Final Year Project, in progress. Repo: private.
-```
+*Technical Lead · Software supply-chain security · Final Year Design Project; manuscript in preparation*
 
-TODO(shanto): link casefile-padma repo once created.
+Investigating whether acquisition-source bias and dataset leakage inflate malicious-package detection results. Developing a zero-execution, pre-installation pipeline using secure extraction, AST analysis, CodeBERT embeddings, XGBoost and SHAP, with package-level deduplication and group-aware validation. Cross-ecosystem evaluation remains in progress; results and source are not public.
 
-### CASE 002: PACKAGEPOLICE
+### Carbon-Aware Edge Intelligence: Multi-Objective Scheduling for Sustainable Water Quality Monitoring
 
-```text
-Threat:   Malicious npm and PyPI packages that execute at
-          install.
-Evidence: Pipeline of secure package extraction, AST-based
-          static analysis, dependency and install-script
-          inspection, CodeBERT embeddings, XGBoost, SHAP
-          explainability.
-Response: Zero-execution, pre-installation detection,
-          delivered as a VS Code extension. Evaluation audits
-          for data leakage and acquisition-source bias:
-          package-level deduplication, group-aware validation,
-          source-controlled evaluation, cross-ecosystem
-          generalization.
-Limits:   Manuscript in preparation; results are not public
-          yet.
-Role:     Technical Lead, 5-person team.
-Status:   Secondary FYP. Repo: private.
-```
+*Technical Lead · Edge intelligence / TinyML · Manuscript in preparation*
 
-TODO(shanto): link casefile-packagepolice repo once created.
+Developing RCAS to defer non-critical transmissions within energy, carbon and deadline constraints. Built a Padma River data pipeline, compared four SDV models and exported a TinyML decision tree to C with emlearn. Evaluation is synthetic and simulated; field validation and further benchmarking remain pending. Source is private.
 
-### CASE 003: SHESAFE
+<details>
+<summary>Additional research · SheSafe HCI study</summary>
 
-```text
-Threat:   Women with no fast, trustworthy way to call for
-          help.
-Evidence: Mobile-first emergency platform: SOS alerting, live
-          location sharing, danger-zone mapping, safe-route
-          guidance.
-Response: Community volunteer response: discovery and
-          acceptance, live tracking, emergency chat, incident
-          lifecycle management. React Native (Expo),
-          TypeScript, Node/Express, MySQL, WebSocket.
-Limits:   Course project; not a deployed service.
-Role:     Contributor (safe-route recommendation, danger-zone
-          mapping, volunteer response ecosystem).
-Status:   3rd Runner-Up, UIU CSE Project Show, Spring 2026.
-```
+**SheSafe: Understanding User Needs for a Human-Centered Women's Safety Mobile Application**
 
-[Repository](https://github.com/saha-rinto-604/SheSafe)
+*HCI term paper*
 
-### CASE 004: UNICONNECT
+Used seven semi-structured interviews, inductive thematic analysis and a survey with 29 valid responses to inform a human-centered safety prototype, including trusted contacts and privacy controls.
 
-```text
-Threat:   Students working in isolation across a campus.
-Evidence: Desktop platform with real-time WebSocket messaging,
-          study groups, collaborative notes with UniCoin
-          rewards, reputation leaderboard, CGPA and tuition
-          calculators.
-Response: Java, JavaFX (Scene Builder), MySQL, bcrypt-secured
-          onboarding, DAO-backed data layer.
-Limits:   Course project (AOOP); desktop only.
-Role:     Team Lead.
-Status:   Complete, Feb 2025. Repo: public.
-```
+</details>
 
-[Repository](https://github.com/Mr-Shantoo/UniConnect)
+## Case files
 
-### CASE 005: FINVISION AI
+### [SheSafe](https://github.com/saha-rinto-604/SheSafe)
 
-```text
-Threat:   Students with no clear picture of their own money.
-Evidence: AI-powered financial assistant app for students.
-Response: Mobile app built by Group 6 (Team Anton) for the MAD
-          course.
-Limits:   Course project.
-Role:     Team member.
-Status:   Submitted, MAD Spring 2026.
-```
+A team-built safety prototype for incident reporting, location sharing and volunteer response. I contributed safe-route recommendations, danger-zone mapping and the volunteer-response workflow. Course project; not a deployed emergency service.
 
-[Repository](https://github.com/Team-Anton/Finvision-3.0)
+**Stack:** React Native, Expo, TypeScript, Node.js/Express, MySQL, WebSocket.
 
-![Section divider](assets/divider.svg)
+### [FinVision AI](https://github.com/Team-Anton/Finvision-3.0)
 
-## UTILITY BELT
+Student finance app with Bangla/Banglish expense input, receipt OCR, budgeting and shared expenses. I contributed as a member of Team Anton; financial records use local-first storage.
 
-| Purpose | Tools |
+**Stack:** React Native, Expo, Redux Toolkit, Node.js/Express, MySQL, Claude API.
+
+### [UniConnect](https://github.com/Mr-Shantoo/UniConnect)
+
+University collaboration desktop app with study groups, shared notes and real-time messaging. I helped build the JavaFX application as a team course project.
+
+**Stack:** Java, JavaFX, MySQL, WebSocket, jBCrypt.
+
+## Technical arsenal
+
+| Area | Tools |
 | --- | --- |
-| Detection & ML | Python, scikit-learn, XGBoost, SHAP, CodeBERT, SDV (CTGAN/TVAE/CopulaGAN/GaussianCopula), AST analysis |
-| Field hardware | ESP32, TinyML, emlearn |
-| Apps & backends | React Native (Expo), TypeScript, Node.js/Express, Java/JavaFX, MySQL, WebSocket |
-| Languages | Python, Java, C/C++, TypeScript/JavaScript |
+| Languages | C, C++, Python, Java, JavaScript, TypeScript; learning Go |
+| Frameworks & development | React Native, Expo, Node.js, Express, JavaFX, WebSocket, Redux Toolkit, HTML, CSS |
+| Security, ML & research | AST analysis, CodeBERT, scikit-learn, decision trees, XGBoost, SHAP, TinyML, emlearn, SDV |
+| Data & tooling | MySQL, SQLite, Redis-compatible stores, Git, GitHub, LaTeX |
 
-*Learning: Go.*
+## Recognition
 
-## COMMENDATIONS
+- **HULT Prize · 2nd Runner-Up** — UIU on-campus round, 2024. Team Lead.
+- **UIU CSE Project Show · 3rd Runner-Up** — SheSafe, Software Engineering Lab, Spring 2026.
+- **UIU merit scholarship · 50%** — Fall 2023, Spring 2024 and Spring 2026.
 
-- HULT Prize On-Campus Round 2024, UIU: 2nd Runner-Up (Team Lead)
-- UIU CSE Project Show, Spring 2026: 3rd Runner-Up (SheSafe)
-- UIU 50% merit scholarship: Fall 2023, Spring 2024, Spring 2026
-
-![Section divider](assets/divider.svg)
-
-## THE SIGNAL
-
-[md.mineuddin121@gmail.com](mailto:md.mineuddin121@gmail.com) · [LinkedIn](https://www.linkedin.com/in/md-mine-uddin/)
+## The signal
 
 Open to AI/ML internships and research collaboration.
+
+[GitHub](https://github.com/Mr-Shantoo) · [LinkedIn](https://www.linkedin.com/in/md-mine-uddin/)
